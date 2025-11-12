@@ -9,7 +9,7 @@ let lastName = "Adeyemi";
 let fullName = firstName + " " + lastName;
 console.log("Hello, " + fullName + "!");
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
 // 2 NUMBERS
@@ -19,7 +19,7 @@ let quantity = 3;
 let totalPrice = price * quantity;
 console.log("Total Price:", totalPrice);
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
 // 3 BOOLEAN
@@ -32,7 +32,7 @@ if (isAvailable) {
 }
 
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
 // 4 UNION TYPE
@@ -45,7 +45,7 @@ function printId(id) {
 printId(101);
 printId("abc123");
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
 // 5 ARRAYS
@@ -55,7 +55,7 @@ let scores = [90, 75, 88];
 console.log(studentNames);
 console.log(scores);
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
 // 6 INTERSECTION TYPE
@@ -70,14 +70,13 @@ let account = {
   balance: 5000,
 };
 
-// Write your solution in index.ts file
+// Write your solution below this line
 
 
-// Bonus Challenge
+
 // In TypeScript, you'll create two types (User and Account)
 // and then combine them into a single variable called `customer`
 // that includes properties from both.
 let customer = { ...user, ...account };
 console.log(customer);
 
-// Write your solution in index.ts file
