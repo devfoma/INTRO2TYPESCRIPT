@@ -80,7 +80,9 @@ Or compile to JavaScript:
 When you are done, commit your changes with the following message exactly as shown:
 
 `git add . `
+
 `git commit -m "chore: My GIDA Skillup Typescript class Activity"`
+
 `git push origin <yourname>-TS-class-activity`
 
 8. Submit
