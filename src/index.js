@@ -1,18 +1,18 @@
 // ============================================================
-// 🧠 CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT
+// CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT
 // ============================================================
 
-// 1️⃣ STRINGS
+// 1 STRINGS
 // Convert this simple greeting to TypeScript and add proper types.
 let firstName = "Faith";
-let lastName = "Maduegbunam";
+let lastName = "Adeyemi";
 let fullName = firstName + " " + lastName;
-console.log("👋 Hello, " + fullName + "!");
+console.log("Hello, " + fullName + "!");
 
 // Write your solution below this line
 
 
-// 2️⃣ NUMBERS
+// 2 NUMBERS
 // Add types for the variables and ensure totalPrice is a number.
 let price = 1500;
 let quantity = 3;
@@ -22,7 +22,7 @@ console.log("Total Price:", totalPrice);
 // Write your solution below this line
 
 
-// 3️⃣ BOOLEAN
+// 3 BOOLEAN
 // Add types for the boolean variable and make it type-safe.
 let isAvailable = true;
 if (isAvailable) {
@@ -35,7 +35,7 @@ if (isAvailable) {
 // Write your solution below this line
 
 
-// 4️⃣ UNION TYPE
+// 4 UNION TYPE
 // This function should accept either a string or a number as 'id'.
 // Add a union type for the parameter and ensure type safety.
 // ignore the any type error here
@@ -48,7 +48,7 @@ printId("abc123");
 // Write your solution below this line
 
 
-// 5️⃣ ARRAYS
+// 5 ARRAYS
 // Convert this to TypeScript using proper array types.
 let studentNames = ["Ada", "Bola", "Chinedu"];
 let scores = [90, 75, 88];
@@ -58,7 +58,7 @@ console.log(scores);
 // Write your solution below this line
 
 
-// 6️⃣ INTERSECTION TYPE
+// 6 INTERSECTION TYPE
 // Combine two objects into one using intersection types in TypeScript.
 let user = {
   name: "Emmanuel",
