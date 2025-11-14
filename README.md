@@ -1,4 +1,4 @@
-# INTRO2TYPESCRIPT
+git # INTRO2TYPESCRIPT
 GIDA SKILLUP SUMMER CLASS ACTIVITY
 
 Welcome to your TypeScript class activity.

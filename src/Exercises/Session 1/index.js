@@ -2,12 +2,13 @@
 // // CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT
 // // ============================================================
 
-// // 1 STRINGS
-// // Convert this simple greeting to TypeScript and add proper types.
-// let firstName = "Faith";
-// let lastName = "Adeyemi";
-// let fullName = firstName + " " + lastName;
-// console.log("Hello, " + fullName + "!");
+//  1 STRINGS
+//  Convert this simple greeting to TypeScript and add proper types.
+
+ let firstName = "Faith";
+ let lastName = "Adeyemi";
+ let fullName = firstName + " " + lastName;
+ console.log("Hello, " + fullName + "!");
 
 // // Write your solution below this line
 
