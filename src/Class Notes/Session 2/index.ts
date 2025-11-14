@@ -21,31 +21,21 @@
 // let customer = { ...user, ...account };
 // console.log(customer);
 
-// let user: {name: string, email: string, phone: number} ={
-//     name: "Emmanuel",
-//     email: "emma@example.com",
-//     phone: 1234567890
-// }
+let user: {name: string, email: string, phone: number} ={
+    name: "Emmanuel",
+    email: "emma@example.com",
+    phone: 1234567890
+}
 
-// let account: {
-//     accountNumber: string,
-//     balance: number,
-//     accountName: string
-// } = {
-//     accountNumber: "AC12345",
-//     balance: 5000,
-//     accountName: "emma"
-// }
+let account: { accountNumber: string, balance: number,accountName: string } = {
+    accountNumber: "AC12345",
+    balance: 5000,
+    accountName: "emma"
+}
 
-// let customer: {
-//     name: string, 
-//     email: string,
-//     phone: number, 
-//     accountNumber: string, 
-//     balance: number
-// } = {...user, ...account};
+let customer= {...user, ...account};
 
-// console.log(customer);
+console.log(customer);
 
 
 // interface User {
@@ -181,62 +171,62 @@
 
 
 // classes
-class Coder{
+// class Coder{
 
-    constructor(
-        public name: string,
-        public music: string,
-        private age: number,
-        protected lang: string
-    ) {
-        this.name = name;
-        this.music = music;
-        this.age = age;
-        this.lang = lang;
-    }
+//     constructor(
+//         public name: string,
+//         public music: string,
+//         private age: number,
+//         protected lang: string
+//     ) {
+//         this.name = name;
+//         this.music = music;
+//         this.age = age;
+//         this.lang = lang;
+//     }
 
-    public getLang(): string{
-        return `${this.name} programs in ${this.lang}, and he is ${this.age} years old.`;
-    }
-}
+//     public getLang(): string{
+//         return `${this.name} programs in ${this.lang}, and he is ${this.age} years old.`;
+//     }
+// }
 
-const Emma = new Coder("Emma", "AfroBeat", 29, "TypeScript");
+// const Emma = new Coder("Emma", "AfroBeat", 29, "TypeScript");
 
-// subclass in typescript
+// // subclass in typescript
 
-class WebDev extends Coder{
-    constructor(
-        public computer: string,
-        private github: string,
-        name: string,
-        music: string,
-        age: number,
-        lang: string
-    ) {
-        super(name, music, age, lang);
-        this.computer = computer;
-        this.github = github;
-    }
+// class WebDev extends Coder{
+//     constructor(
+//         public computer: string,
+//         private github: string,
+//         name: string,
+//         music: string,
+//         age: number,
+//         lang: string
+//     ) {
+//         super(name, music, age, lang);
+//         this.computer = computer;
+//         this.github = github;
+//     }
 
-    public getGithub(): string{
-        return `The Github username of ${this.name} is ${this.github} adnd he codes in ${this.lang} `;
-    }
-}
+//     public getGithub(): string{
+//         return `The Github username of ${this.name} is ${this.github} adnd he codes in ${this.lang} `;
+//     }
+// }
 
-const EmmaDev = new WebDev("MacBook Pro", "emmaGitHub", "Emma", "AfroBeat", 29, "TypeScript");
+// const EmmaDev = new WebDev("MacBook Pro", "emmaGitHub", "Emma", "AfroBeat", 29, "TypeScript");
 
-console.log(Emma);
-console.log(Emma.getLang());
-console.log(Emma.name);
-// console.log(Emma.age); // This should cause an error because age is privat
+// console.log(Emma);
+// console.log(Emma.getLang());
+// console.log(Emma.name);
+// // console.log(Emma.age); // This should cause an error because age is privat
 
-console.log(EmmaDev);
-console.log(EmmaDev.getLang());
-console.log(EmmaDev.getGithub());
-// console.log(EmmaDev.lang); // This should cause an error because lang is protected
-// console.log(EmmaDev.age);
+// console.log(EmmaDev);
+// console.log(EmmaDev.getLang());
+// console.log(EmmaDev.getGithub());
+// // console.log(EmmaDev.lang); // This should cause an error because lang is protected
+// // console.log(EmmaDev.age);
 
 
-// public assess anywhere
-// private assess only within the class
-// protected assess within the class and subclasses
+// // public assess anywhere
+// // private assess only within the class
+// // protected assess within the class and subclasses
