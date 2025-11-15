@@ -22,12 +22,12 @@ Open your terminal and clone your forked repository:
 
 Create and switch to a new branch using the following naming convention:
 
-`<yourname>-TS-class-activity`
+`WISDOM_CHUKWUEBUKA_OKEREKE-TS-class-activity`
 
 
 Example:
 
-`git checkout -b Faith-TS-class-activity`
+`git checkout -b WISDOM_CHUKWUEBUKA_OKEREKE-TS-class-activity`
 
 ## 4. Install Dependencies
 
