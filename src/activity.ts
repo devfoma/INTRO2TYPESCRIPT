@@ -33,23 +33,30 @@ console.log(scores);
 
 // 6
 //
-interface User {
+let User: {
   name: string;
   email: string;
-}
-
-interface Account {
-  accountNumber: string;
-  balance: number;
-}
-
-type customer = User & Account;
-
-const customer: customer = {
+} = {
   name: "okorie chigozie",
   email: "okoriechigoze.com",
-  accountNumber: "2025XYZ",
+};
+
+let Account: {
+  accountNumber: string;
+  balance: number;
+} = {
+  accountNumber: "2026XYZ",
   balance: 50000,
+};
+
+let customer: {
+  name: string;
+  email: string;
+  accountNumber: string;
+  balance: number;
+} = {
+  ...User,
+  ...Account,
 };
 
 console.log("customer:", customer);
