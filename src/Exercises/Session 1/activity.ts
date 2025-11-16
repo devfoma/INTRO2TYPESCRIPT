@@ -33,13 +33,39 @@ console.log(`${studentNames[1]} scored ${scores[1]}`)
 console.log(`${studentNames[2]} scored ${scores[2]}`)
 
 // // 6 INTERSECTION TYPE
-let user: {name: string, email: string}={
-         name: "Emmanuel",
-        email: "emma@example.com"
+// let user: {name: string, email: string}={
+//          name: "Emmanuel",
+//         email: "emma@example.com"
+// }
+// let account: {accountNumber: string, balance:number}={
+//     accountNumber: "AC12345",
+//     balance: 5000,
+// }
+// let customer: {name:string, email:string, accountNumber:string, balance:number} = {...user, ...account};
+// console.log(customer)
+
+type user = {
+    name: string,
+    email: String
+};
+type account ={
+    accountNumber: string,
+    balance: number
+};
+
+let user: user ={
+    name: "Emmanuel",
+    email: "emma@example.com"
 }
-let account: {accountNumber: string, balance:number}={
+let account: account={
     accountNumber: "AC12345",
-    balance: 5000,
+    balance: 5000
 }
-let customer: {name:string, email:string, accountNumber:string, balance:number} = {...user, ...account};
-console.log(customer)
+type customer= user & account;
+let customer: customer={
+    name: user.name,
+    email: user.email,
+    accountNumber: account.accountNumber,
+    balance: account.balance
+}
+console.log(customer);
