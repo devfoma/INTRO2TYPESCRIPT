@@ -11,7 +11,6 @@ console.log("Hello, " + fullName + "!");
 
 // Write your solution below this line
 
-
 // 2 NUMBERS
 // Add types for the variables and ensure totalPrice is a number.
 let price = 1500;
