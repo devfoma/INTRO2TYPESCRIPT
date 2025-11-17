@@ -8,10 +8,11 @@ Write a function that takes this ID and returns a formatted string like:
 
 Employee ID: E1234
 */
-type EmployeeID = string | Number;
+type EmployeeID = string | number;
 
-function formatemployeeID(id: EmployeeID): string {
+function formatEmployeeID(id: EmployeeID): string {
   return `Employee ID: E${id}`;
 }
-console.log(formatEmployeeID("1234")); 
+
+console.log(formatEmployeeID("1234"));
 console.log(formatEmployeeID(9987));
