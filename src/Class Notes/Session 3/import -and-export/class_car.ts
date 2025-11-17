@@ -3,7 +3,7 @@
 //  Description: Create Car and ElectricCar classes with access modifiers.
  
 
-class Car {
+export class Car {
   public brand: string;
   public model: string;
   private engineNumber: string;
@@ -21,7 +21,7 @@ class Car {
   }
 }
 
-class ElectricCar extends Car {
+export class ElectricCar extends Car {
   batteryLife: number;
 
   constructor(

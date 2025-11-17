@@ -2,13 +2,13 @@
 //   Topic: Enums and Conditional Logic 
 //  Description: Use enum to represent task status and print messages.
 
- enum TaskStatus {
+export enum TaskStatus {
   Pending,
   InProgress,
   Completed,
 }
 
-function checkStatus(status: TaskStatus): void {
+export function checkStatus(status: TaskStatus): void {
   switch (status) {
     case TaskStatus.Pending:
       console.log("Task is pending. Please start soon.");
