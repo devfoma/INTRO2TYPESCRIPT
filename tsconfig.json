@@ -16,9 +16,9 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+  "sourceMap": true,
+  "declaration": false,
+  "declarationMap": false,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -41,4 +41,9 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
   }
+  ,
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

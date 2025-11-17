@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Hehe yes it's empty you have to fill it with your solutions
-<<<<<<< HEAD
 // 1
 let firstname = "Muhammad Thakeeb";
 let lastName = "Muhammad";
@@ -38,14 +35,5 @@ const Customer = {
     balance: 5000,
 };
 console.log(Customer);
-=======
-var size;
-(function (size) {
-    size[size["small"] = 1] = "small";
-    size[size["medium"] = 2] = "medium";
-    size[size["large"] = 3] = "large";
-})(size || (size = {}));
-let mySize = size.medium;
-console.log(mySize);
->>>>>>> main
+export {};
 //# sourceMappingURL=index.js.map

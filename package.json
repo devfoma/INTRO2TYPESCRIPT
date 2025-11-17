@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "GIDA SKILLUP SUMMER CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "start:ts": "ts-node --transpile-only \"src/Solutions/Thakeeb-TS-Solutions/session 2/class_car.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,18 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/devfoma/INTRO2TYPESCRIPT/issues"
   },
-   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "outDir": "./dist"
-  },
   "homepage": "https://github.com/devfoma/INTRO2TYPESCRIPT#readme",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "ts-node": "^10.9.1",
+    "@types/node": "^20.5.1"
   }
 }
