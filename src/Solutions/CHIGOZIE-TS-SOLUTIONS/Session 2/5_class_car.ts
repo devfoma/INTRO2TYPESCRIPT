@@ -1,17 +1,13 @@
-//  Session 2 - Task 5
-//  Topic: Classes and Access Modifiers
-//  Description: Create Car and ElectricCar classes with access modifiers.
-
 class Car {
   public brand: string;
   public model: string;
-  private engineNumber: string;
+  private engineNumber: number;
   protected year: number;
 
   constructor(
     brand: string,
     model: string,
-    engineNumber: string,
+    engineNumber: number,
     year: number
   ) {
     this.brand = brand;
@@ -31,7 +27,7 @@ class ElectricCar extends Car {
   constructor(
     brand: string,
     model: string,
-    engineNumber: string,
+    engineNumber: number,
     year: number,
     batteryLife: number
   ) {
@@ -39,13 +35,14 @@ class ElectricCar extends Car {
     this.batteryLife = batteryLife;
   }
 
-  showDetails(): void {
+  showBranddetails(): void {
     console.log(
-      `Electric Car: ${this.brand} ${this.model}, Year: ${this.year}, Battery: ${this.batteryLife} hrs`
+      `Electric Car: ${this.brand} ${this.model}, Year: ${this.year}, Battery Capacity: ${this.batteryLife} mins per day`
     );
   }
 }
 
-const tesla = new ElectricCar("Tesla", "Model S", "EN98765", 2023, 12);
+const tesla = new ElectricCar("GLK", "3RC", 98765, 2023, 12);
 tesla.displayInfo();
-tesla.showDetails();
+tesla.showBranddetails();
+// tesla.showBranddetails();

@@ -1,7 +1,6 @@
 //  Session 2 - Task 4
 //  Topic: Interfaces and Inheritance
 // Description: Create Person and Employee interfaces.
- 
 
 interface Person {
   name: string;
