@@ -55,28 +55,29 @@
 
 // // 5 ARRAYS
 // // Convert this to TypeScript using proper array types.
-// let studentNames = ["Ada", "Bola", "Chinedu"];
-// let scores = [90, 75, 88];
+// let studentNames: string[] = ["Ada", "Bola", "Chinedu"];
+// let scores: number[] = [90, 75, 88];
 // console.log(studentNames);
-// console.log(scores);
+// console.log(scores[1]);
 
 // // Write your solution below this line
-
+// //By adding `: number[] or string[]` before the equality sign that assigns a value
 
 // 6 INTERSECTION TYPE
 // Combine two objects into one using intersection types in TypeScript.
-// let user = {
-//   name: "Emmanuel",
-//   email: "emma@example.com",
-// };
+let user = {
+  name: "Emmanuel",
+  email: "emma@example.com",
+};
 
-// let account = {
-//   accountNumber: "AC12345",
-//   balance: 5000,
-// };
+let account = {
+  accountNumber: "AC12345",
+  balance: 5000,
+};
 
 // Write your solution below this line
-
+let customer = { ...user, ...account };
+console.log(customer);
 
 
 // In TypeScript, you'll create two types (User and Account)
