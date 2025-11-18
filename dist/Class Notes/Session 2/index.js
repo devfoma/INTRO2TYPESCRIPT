@@ -15,28 +15,19 @@
 // };
 // let customer = { ...user, ...account };
 // console.log(customer);
-// let user: {name: string, email: string, phone: number} ={
-//     name: "Emmanuel",
-//     email: "emma@example.com",
-//     phone: 1234567890
-// }
-// let account: {
-//     accountNumber: string,
-//     balance: number,
-//     accountName: string
-// } = {
-//     accountNumber: "AC12345",
-//     balance: 5000,
-//     accountName: "emma"
-// }
-// let customer: {
-//     name: string, 
-//     email: string,
-//     phone: number, 
-//     accountNumber: string, 
-//     balance: number
-// } = {...user, ...account};
-// console.log(customer);
+let user = {
+    name: "Emmanuel",
+    email: "emma@example.com",
+    phone: 1234567890
+};
+let account = {
+    accountNumber: "AC12345",
+    balance: 5000,
+    accountName: "emma"
+};
+let customer = { ...user, ...account };
+console.log(customer);
+export {};
 // interface User {
 //     name: string,
 //     email: string,
@@ -132,53 +123,52 @@
 // console.log(`Employee Name: ${employee.name}, Salary: ${employee.salary}`);
 // console.log(`Manager Name: ${manager.name}, Salary: ${manager.salary}, Department: ${manager.department}`);
 // classes
-class Coder {
-    name;
-    music;
-    age;
-    lang;
-    constructor(name, music, age, lang) {
-        this.name = name;
-        this.music = music;
-        this.age = age;
-        this.lang = lang;
-        this.name = name;
-        this.music = music;
-        this.age = age;
-        this.lang = lang;
-    }
-    getLang() {
-        return `${this.name} programs in ${this.lang}, and he is ${this.age} years old.`;
-    }
-}
-const Emma = new Coder("Emma", "AfroBeat", 29, "TypeScript");
-// subclass in typescript
-class WebDev extends Coder {
-    computer;
-    github;
-    constructor(computer, github, name, music, age, lang) {
-        super(name, music, age, lang);
-        this.computer = computer;
-        this.github = github;
-        this.computer = computer;
-        this.github = github;
-    }
-    getGithub() {
-        return `The Github username of ${this.name} is ${this.github} adnd he codes in ${this.lang} `;
-    }
-}
-const EmmaDev = new WebDev("MacBook Pro", "emmaGitHub", "Emma", "AfroBeat", 29, "TypeScript");
-console.log(Emma);
-console.log(Emma.getLang());
-console.log(Emma.name);
-// console.log(Emma.age); // This should cause an error because age is privat
-console.log(EmmaDev);
-console.log(EmmaDev.getLang());
-console.log(EmmaDev.getGithub());
-export {};
-// console.log(EmmaDev.lang); // This should cause an error because lang is protected
-// console.log(EmmaDev.age);
-// public assess anywhere
-// private assess only within the class
-// protected assess within the class and subclasses
+// class Coder{
+//     constructor(
+//         public name: string,
+//         public music: string,
+//         private age: number,
+//         protected lang: string
+//     ) {
+//         this.name = name;
+//         this.music = music;
+//         this.age = age;
+//         this.lang = lang;
+//     }
+//     public getLang(): string{
+//         return `${this.name} programs in ${this.lang}, and he is ${this.age} years old.`;
+//     }
+// }
+// const Emma = new Coder("Emma", "AfroBeat", 29, "TypeScript");
+// // subclass in typescript
+// class WebDev extends Coder{
+//     constructor(
+//         public computer: string,
+//         private github: string,
+//         name: string,
+//         music: string,
+//         age: number,
+//         lang: string
+//     ) {
+//         super(name, music, age, lang);
+//         this.computer = computer;
+//         this.github = github;
+//     }
+//     public getGithub(): string{
+//         return `The Github username of ${this.name} is ${this.github} adnd he codes in ${this.lang} `;
+//     }
+// }
+// const EmmaDev = new WebDev("MacBook Pro", "emmaGitHub", "Emma", "AfroBeat", 29, "TypeScript");
+// console.log(Emma);
+// console.log(Emma.getLang());
+// console.log(Emma.name);
+// // console.log(Emma.age); // This should cause an error because age is privat
+// console.log(EmmaDev);
+// console.log(EmmaDev.getLang());
+// console.log(EmmaDev.getGithub());
+// // console.log(EmmaDev.lang); // This should cause an error because lang is protected
+// // console.log(EmmaDev.age);
+// // public assess anywhere
+// // private assess only within the class
+// // protected assess within the class and subclasses
 //# sourceMappingURL=index.js.map

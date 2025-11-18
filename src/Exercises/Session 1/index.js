@@ -1,63 +1,83 @@
-// // ============================================================
-// // CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT
-// // ============================================================
+// // // ============================================================
+// // // CLASS ACTIVITY: CONVERT THIS JAVASCRIPT CODE TO TYPESCRIPT
+// // // ============================================================
 
-//  1 STRINGS
-//  Convert this simple greeting to TypeScript and add proper types.
+// //  1 STRINGS
+// //  Convert this simple greeting to TypeScript and add proper types.
 
- let firstName = "Faith";
- let lastName = "Adeyemi";
- let fullName = firstName + " " + lastName;
- console.log("Hello, " + fullName + "!");
+//  let firstName = "Faith";
+//  let lastName = "Adeyemi";
+//  let fullName = firstName + " " + lastName;
+//  console.log("Hello, " + fullName + "!");
 
-// // Write your solution below this line
+// // // Write your solution below this line
+// let firstName: string = "Mekjah";
+// let lastName: string= "Bassey";
+// let fullName: string = firstName + " " + lastName;
+// console.log("Hello, " + fullName + "!");
 
+// // // 2 NUMBERS
+// // // Add types for the variables and ensure totalPrice is a number.
+// // let price = 1500;
+// // let quantity = 3;
+// // let totalPrice = price * quantity;
+// // console.log("Total Price:", totalPrice);
 
-// // 2 NUMBERS
-// // Add types for the variables and ensure totalPrice is a number.
-// let price = 1500;
-// let quantity = 3;
-// let totalPrice = price * quantity;
+// // // Write your solution below this line
+// let price: number = 1500;
+// let quantity: number= 3;
+// let totalPrice: number = price * quantity;
 // console.log("Total Price:", totalPrice);
 
+// // // 3 BOOLEAN
+// // // Add types for the boolean variable and make it type-safe.
+// // let isAvailable = true;
+// // if (isAvailable) {
+// //   console.log("Item is available for purchase.");
+// // } else {
+// //   console.log("Item is out of stock.");
+// // }
+
+
 // // Write your solution below this line
-
-
-// // 3 BOOLEAN
-// // Add types for the boolean variable and make it type-safe.
-// let isAvailable = true;
+// let isAvailable: boolean = true;
 // if (isAvailable) {
 //   console.log("Item is available for purchase.");
 // } else {
 //   console.log("Item is out of stock.");
 // }
 
+// // 4 UNION TYPE
+// // This function should accept either a string or a number as 'id'.
+// // Add a union type for the parameter and ensure type safety.
+// // ignore the any type error here
+// // function printId(id) {
+// //   console.log("User ID is:", id);
+// // }
+// // printId(101);
+// // printId("abc123");
+// // printId(true); // This should cause a type error in TypeScript
 
-// Write your solution below this line
-
-
-// 4 UNION TYPE
-// This function should accept either a string or a number as 'id'.
-// Add a union type for the parameter and ensure type safety.
-// ignore the any type error here
-// function printId(id) {
+// // Write your solution below this line
+// function printId(id: string | number ) {
 //   console.log("User ID is:", id);
 // }
 // printId(101);
 // printId("abc123");
-// printId(true); // This should cause a type error in TypeScript
+// printId(true); 
 
-// Write your solution below this line
+// // // 5 ARRAYS
+// // // Convert this to TypeScript using proper array types.
+// // let studentNames = ["Ada", "Bola", "Chinedu"];
+// // let scores = [90, 75, 88];
+// // console.log(studentNames);
+// // console.log(scores);
 
-
-// // 5 ARRAYS
-// // Convert this to TypeScript using proper array types.
-// let studentNames = ["Ada", "Bola", "Chinedu"];
-// let scores = [90, 75, 88];
+// // // Write your solution below this line
+// let studentNames: string[]=["Ada", "Bola", "Chinedu"];
+// let scores: number[] = [90, 75, 88];
 // console.log(studentNames);
 // console.log(scores);
-
-// // Write your solution below this line
 
 
 // 6 INTERSECTION TYPE
@@ -73,6 +93,24 @@
 // };
 
 // Write your solution below this line
+// type user = {
+//     name: string,
+//     email: string,
+// };
+// type account = {
+//     accountNumber: string,
+//     balance: Number,
+// };
+
+// let user: user = {
+//   name: "Emmanuel",
+//   email: "emma@example.com",
+// };
+
+// let account: account = {
+//   accountNumber: "AC12345",
+//   balance: 5000,
+// };
 
 
 
@@ -82,7 +120,33 @@
 // let customer = { ...user, ...account };
 // console.log(customer);
 
-function calculateTax(income, taxYear){
+
+// type user = {
+//   name: String,
+//   email: String,
+//   phone: Number,
+// };
+// type account = {
+//   accountNumber: Number,
+//   balance: Number,
+// };
+
+
+// let user: user = {
+//   name: "Emmanuel",
+//   email: "amazingrex6@gmail.com",
+//   phone: +2349035640805,
+// };
+
+// let account: account = {
+//   accountNumber: 9035640805,
+//   balance: 35000,
+// };
+
+// let customer = { ...user, ...account };
+// console.log(customer);
+
+function calculateTax(income:number, taxYear:number): number {
     if (taxYear < 2025) {
         return (income / 100) * 1.2;
     } else{
@@ -91,6 +155,6 @@ function calculateTax(income, taxYear){
     
 }
 
-let tax = calculateTax(5_000_000_000, 2030);
+let tax : Number = calculateTax(5_000_000_000, 2030);
 
 console.log("Tax is:", tax);
