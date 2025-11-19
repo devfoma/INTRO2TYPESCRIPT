@@ -49,9 +49,9 @@ let year: number[] = [10, 12, 20, 25]
 // console.log(`${name} hobbies are ${hobbies} and he is ${year[1]}`)
 
 // union type (or) and intersection type  (and)
-let mixedArray: (string | number | boolean) [] = ["john", "nonso", 5, 20, true]
+let mixedArray: (string | number | boolean) [] = ["john", "nonso", 5, 20, true,]
 
-let difArray: (string | number | boolean)[] = ["john", "abigail", 2015, false]
+let difArray: (string | number | boolean)[] = ["john", "abigail", 2015, false,]
 
 function kgTOLbs (weight: number | string): number {
     if (typeof weight === 'number')
