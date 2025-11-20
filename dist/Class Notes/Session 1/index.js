@@ -1,7 +1,5 @@
-"use strict";
 // vanilla javascript, type inference: the compiler guesses the data type based on the value passed
 // let age: number = 20;
-Object.defineProperty(exports, "__esModule", { value: true });
 // age = "20 years old"
 // console.log("My name is ", age)
 // in typescript
@@ -35,8 +33,8 @@ let hobbies = ["swimming", "jogging", "knitting.",];
 let year = [10, 12, 20, 25];
 // console.log(`${name} hobbies are ${hobbies} and he is ${year[1]}`)
 // union type (or) and intersection type  (and)
-let mixedArray = ["john", "nonso", 5, 20, true,];
-let difArray = ["john", "abigail", 2015, false,];
+let mixedArray = ["john", "nonso", 5, 20, true];
+let difArray = ["john", "abigail", 2015, false];
 function kgTOLbs(weight) {
     if (typeof weight === 'number')
         return weight * 2.2;
@@ -44,4 +42,5 @@ function kgTOLbs(weight) {
         return parseInt(weight) * 2.2;
 }
 let dubArray;
+export {};
 //# sourceMappingURL=index.js.map

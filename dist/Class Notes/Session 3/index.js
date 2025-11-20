@@ -1,20 +1,9 @@
-"use strict";
-// Generics
-Object.defineProperty(exports, "__esModule", { value: true });
-// arrow function
-// const myFunction = (arg: string): string => arg
-// // traditional function
-// function ourFunction ( arg: string): string {
-//     return arg
-// }
-// function ourFunction<myGenericType>(arg:myGenericType):myGenericType{
-//     return arg
-// }
-// console.log(ourFunction<string>("Hello Generics"))
-function webGenericFunction(valone, valtwo) {
-    return [valone, valtwo];
+// // Generics
+function webGenericFunction(valOne, valTwo) {
+    return [valOne, valTwo];
 }
-console.log(webGenericFunction(true, "Hello Generics"));
-console.log(webGenericFunction("Hello", "world"));
-console.log(webGenericFunction({ name: 'Alice' }, 30));
+console.log(webGenericFunction({ height: 39, width: 40, div: "example", p: "web2 class" }, "40.9"));
+// console.log(webGenericFunction<string, string>("Hello", "World"))
+console.log(webGenericFunction({ height: 50, width: 60, div: "example2", p: "web2 class" }, 25));
+export {};
 //# sourceMappingURL=index.js.map

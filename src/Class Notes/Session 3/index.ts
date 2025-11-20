@@ -1,4 +1,4 @@
-// Generics
+// // Generics
 
 // arrow function
 // const myFunction = (arg: string): string => arg

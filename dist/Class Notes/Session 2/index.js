@@ -1,11 +1,9 @@
-"use strict";
 // Hehe yes it's empty you have to fill it with your solutions
 // function printId(id: string | number) {
 //   console.log("User ID is:", id);
 // }
 // printId(101);
 // printId("abc123");
-Object.defineProperty(exports, "__esModule", { value: true });
 // intersection logical AND (&)
 // let user = {
 //   name: "Emmanuel",
@@ -177,6 +175,7 @@ console.log(Emma.name);
 console.log(EmmaDev);
 console.log(EmmaDev.getLang());
 console.log(EmmaDev.getGithub());
+export {};
 // console.log(EmmaDev.lang); // This should cause an error because lang is protected
 // console.log(EmmaDev.age);
 // public assess anywhere

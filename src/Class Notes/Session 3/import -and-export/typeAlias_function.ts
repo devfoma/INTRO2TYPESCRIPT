@@ -4,7 +4,7 @@
 // 
 
 // Type alias for employee ID
-type EmployeeID = string | number;
+export type EmployeeID = string | number;
 
 
 function formatEmployeeID(id: EmployeeID): string {
