@@ -8,10 +8,14 @@ interface Employee extends Person {
     salary: number
 }
 
-let person: Person = {
+let person: Employee = {
     name: "Wisdom Okereke",
-    age: 59_000_999_999_000_000_000
+    age: 58,
+    department: "IT",
+    salary: 59_000_000
 }
+
+console.log(`Employee Details: (name: ${person.name}, age: ${person.age}, department: ${person.department}, salary: ${person.salary})`);
 
 /*
 4. Interfaces and Interface Inheritance
