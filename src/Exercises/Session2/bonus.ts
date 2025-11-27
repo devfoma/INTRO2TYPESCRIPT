@@ -21,11 +21,11 @@ class Transaction {
   }
 }
 
-const t1 = new Transaction("100", 5000, TransactionType.Deposit);
-const t2 = new Transaction(200, 2500, TransactionType.Withdrawal);
+const type1 = new Transaction("100", 5000, TransactionType.Deposit);
+const type2 = new Transaction(200, 2500, TransactionType.Withdrawal);
 
-t1.printSummary();
-t2.printSummary();
+type1.printSummary();
+type2.printSummary();
 
 
 /*
