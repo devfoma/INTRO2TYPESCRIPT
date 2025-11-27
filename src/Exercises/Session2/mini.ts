@@ -1,24 +1,54 @@
-//Student Management System
-/*
-Step 6: How to Organize
+// Mini Project Student Report
 
-Start with the enum → this is simple and independent.
-
-Define the interface → then your class can use it as a type.
-
-Write the class → define private array, methods.
-
-Test your class → create some Student objects and add them to the report.
-*/
-
-enum Gradelevel {
-    Sophomore,
-    Freshman,
-    Junior,
-    Senior
+enum GradeLevel {
+  Freshman,
+  Sophomore,
+  Junior,
+  Senior,
 }
 
-j
+interface Student {
+  name: string;
+  age: number;
+  gradeLevel: GradeLevel;
+  subjects: [string, number]; // subjectName, score
+}
+
+class Report {
+  private students: Student[] = [];
+
+  addStudent(student: Student): void {
+    this.students.push(student);
+  }
+
+  printReport(): void {
+    console.log("===== Student Report =====");
+    this.students.forEach((student) => {
+      console.log(
+        `${student.name}, Age: ${student.age}, Level: ${student.gradeLevel}, Subject: ${student.subjects[0]}, Score: ${student.subjects[1]}`
+      );
+    });
+  }
+}
+
+
+const report = new Report();
+
+report.addStudent({
+  name: "John Smith",
+  age: 19,
+  gradeLevel: GradeLevel.Freshman,
+  subjects: ["Math", 85],
+});
+
+report.addStudent({
+  name: "Mary Lee",
+  age: 21,
+  gradeLevel: GradeLevel.Junior,
+  subjects: ["Physics", 92],
+});
+
+report.printReport();
 
 /*
 6. Mini Project: Student Management System
@@ -55,4 +85,5 @@ Use all the concepts from this week.
 Focus on correct typing and structure.
 
 Keep your code organized and readable.
+
 */
